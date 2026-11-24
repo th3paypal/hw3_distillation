@@ -1,0 +1,15 @@
+{
+  "initialization": "random, including embeddings, encoder and classifier",
+  "student": {"hidden_size": 384, "layers": 6, "heads": 6, "intermediate_size": 1536, "rank": 64},
+  "training": {
+    "max_steps": 20000,
+    "learning_rate": 0.0005,
+    "batch_size": 32,
+    "accumulation_steps": 1,
+    "warmup_ratio": 0.1,
+    "eval_every": 500,
+    "patience": 10,
+    "temperature": 3.0,
+    "kd_weight": 1.0
+  }
+}

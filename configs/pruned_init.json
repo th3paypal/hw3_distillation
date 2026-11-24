@@ -1,0 +1,14 @@
+{
+  "initialization": "keep two teacher layers by calibration influence, factorize embeddings with SVD",
+  "source": "teacher",
+  "training": {
+    "epochs": 8,
+    "learning_rate": 0.00005,
+    "batch_size": 16,
+    "accumulation_steps": 2,
+    "eval_every": 400,
+    "patience": 6,
+    "temperature": 3.0,
+    "kd_weight": 1.0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "initialization": "pretrained bert-base-cased, random NER head",
+  "training": {
+    "epochs": 5,
+    "learning_rate": 0.00003,
+    "batch_size": 16,
+    "accumulation_steps": 2,
+    "eval_every": 400,
+    "patience": 6,
+    "kd_weight": 0.0
+  }
+}

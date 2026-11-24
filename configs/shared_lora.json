@@ -1,0 +1,14 @@
+{
+  "initialization": "same averaged shared base + independent rank-8 LoRA on Q,V at each depth",
+  "source": "student_kd",
+  "training": {
+    "epochs": 8,
+    "learning_rate": 0.0001,
+    "batch_size": 32,
+    "accumulation_steps": 1,
+    "eval_every": 400,
+    "patience": 6,
+    "temperature": 3.0,
+    "kd_weight": 1.0
+  }
+}
